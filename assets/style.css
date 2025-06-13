@@ -131,9 +131,9 @@ button {
     font-weight: bold;
     font-size: 14px;
 }
-#new-game, #button-reset-game {
+#button-reset-game {
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     right: 20px;
     bottom: 20px;
     width: 70px;
