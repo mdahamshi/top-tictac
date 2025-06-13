@@ -83,7 +83,7 @@ button:disabled {
 }
 
 #content{
-    height: 100vh;
+    height: 100dvh;
     grid-template-rows: auto 1fr;
     display: flex;
     flex-direction: column;
