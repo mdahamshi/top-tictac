@@ -98,7 +98,7 @@ button:disabled {
     resize: both;
     align-self: center;
     justify-self: center;
-    width: 100%;
+    height: clamp(50%,min(100vh, 100vw),100%);
     
 }
 .board-wrapper {
@@ -204,12 +204,6 @@ button {
         max-width: 400px;
     }
 
-    #content .header-top {
-        display: flex;
-    }
-    #board {
-        width: auto;
-        height: 100%;
-        
-    }
+
+
 }
