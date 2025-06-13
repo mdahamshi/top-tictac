@@ -1,4 +1,4 @@
-# top-library
+# TicTacToe
 TicTacToe Project, [TOP project](https://www.theodinproject.com/lessons/node-path-javascript-tic-tac-toe)
 
 I used MVC with pure javascript.
