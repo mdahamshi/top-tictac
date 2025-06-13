@@ -207,3 +207,15 @@ button {
 
 
 }
+
+@media only screen and (max-height: 500px) {
+    #content {
+        flex-direction: row;
+    }
+    .header-players {
+        flex-direction: column;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+}
