@@ -113,7 +113,7 @@ button:disabled {
     max-width: 300px;
     width: 100%;
     height: 100%;
-    font-size: 5rem;
+    font-size: clamp(2rem, 5rem, 7rem);
 }
 
 #board button.cell.winning {
@@ -218,5 +218,11 @@ button {
         justify-content: space-between;
         flex-grow: 1;
     }
+
+
+    #board button.cell {
+        font-size: 2rem;
+    }
+
 
 }
