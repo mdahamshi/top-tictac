@@ -133,7 +133,7 @@ button {
 }
 #button-reset-game {
     border-radius: 50%;
-    position: fixed;
+    position: absolute;
     right: 20px;
     bottom: 20px;
     width: 70px;
