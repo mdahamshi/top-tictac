@@ -56,5 +56,20 @@ function createBoard(rows, cols, pushFunc){
     }
     return board;
 }
-const sb_utils = {generateID, addCopyRight, createBoard};
+
+function getRandomColor(nice){
+    let sb_colors = [   '#8e1330', '#8a6c1d', '#406555'
+        , '#7c0e45', '#8d1978', '#181770', '#cc38d7', '#47504e', '#0fa080', '#0f64a0', '#460fa0'
+        , '#a00f65', '#a00f24', '#0f94a0', '#0fa067', '#0fa03c', '#38a00f', '#a09d0f', '#a0670f'
+        , '#a0370f', '#a00f0f', '#2b634d', '#2b4c63', '#2e6bc6', '#1992d4'
+        ];
+
+        let randomColor = "#"+((1<<24)*Math.random()|0).toString(16);
+        if(nice)
+            randomColor = sb_colors[Math.floor(Math.random()*sb_colors.length)];
+        return randomColor;
+}
+
+const sb_utils = {generateID, addCopyRight, createBoard, getRandomColor};
+document.sb = sb_utils
 export {sb_utils};

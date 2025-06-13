@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/css/solid.min.css">
+    <link rel="stylesheet" href="./assets/css/regular.min.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+    <div id="content">
+           <div class="header flex-col sb-shadow">
+                    <div class="flex-row header-players">
+                        <div class="flex-col" id="header-player-1">
+                            <img src="./assets/img/eagle.png" alt="avatart" class="avatar">
+                            <h2>Player 1</h2>
+                            <p>X</p>
+                        </div>
+    
+                        <div id="header-player-2" class="flex-col">
+                            <img src="./assets/img/chicken.png" alt="avatart" class="avatar">
+                            <h2>Player 2</h2>
+                            <p>O</p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex-row">
+                        <p id="message-center">Player One's turn.</p>
+                    </div>
+
+            </div>
+            
+
+        <dialog id="dialog-new-game" class="dialog-modal">
+            <div class="flex-col">
+                <button id="dialog-close" autofocus>X</button>
+                <h2>Players Names</h2>
+                <form class="flex-col"  method="post">
+                    <div class="form-row">
+                        <label for="player-1">Player 1</label>
+                        <input type="text" id="player-1" name="player-1" required>
+                    </div>  
+                    <div class="form-row">
+                        <label for="player-2">Player 2</label>
+                        <input type="text" id="player-2" name="player-2" required>
+                    </div>
+                    
+                    <button type="submit" id="button-start-game">Start</button>
+                </form>
+            </div>
+        </dialog>
+        <div class="board-wrapper">
+            <div id="board">
+            </div>
+
+        </div>
+        <footer class="flex-row footer">
+            <button type="button" id="button-reset-game">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+
+        </footer>
+    </div>
+    
+    <!-- <script type="module" src="./assets/model.js"></script> -->
+    <script type="module" src="./assets/utils.js">
+        import * as utils from './assets/utils.js'
+    </script>
+    <script type="module" src="assets/controller.js">
+        import {TOPLib} from './assets/controller.js'
+        document.TOPLib = TOPLib; 
+
+    </script>
+
+</body>
+</html>
