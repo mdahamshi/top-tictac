@@ -55,12 +55,12 @@ body {
 }
 #message-center {
     text-align: center;
-    margin: auto;
     color: black;
     border: 2px solid var(--sb-theme-color);    
     border-radius: 4px;
     padding: 6px;
     color: var(--sb-theme-color);
+    align-self: flex-end;
 }
 .header div {
     gap: 0;
